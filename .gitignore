@@ -7,8 +7,7 @@ spotify_api_cache.json
 unknown_songs.txt
 
 # Data folders
-data/*
-output/*
+
 *.jsonl
 *.json
 *.zip
