@@ -1,0 +1,26 @@
+# Environment variables
+.env
+
+# Output files
+spotify_streaming_history.json
+spotify_api_cache.json
+unknown_songs.txt
+
+# Data folders
+data/*.jsonl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.coverage
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
