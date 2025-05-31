@@ -8,6 +8,7 @@ unknown_songs.txt
 
 # Data folders
 data/*
+output/*
 *.jsonl
 *.json
 *.zip

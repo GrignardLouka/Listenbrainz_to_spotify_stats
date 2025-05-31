@@ -11,14 +11,17 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # ========== CONFIG ==========
-CACHE_FILE = "spotify_api_cache.json"
-OUTPUT_FILE = "spotify_streaming_history.json"
+CACHE_FILE = "output/spotify_api_cache.json"
+OUTPUT_FILE = "output/spotify_streaming_history.json"
+UNKNOWN_FILE = "output/unknown_songs.txt"
 
 # At the top of the file
 SPOTIFY_CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID", "")
 SPOTIFY_CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET", "")
 USERNAME = os.getenv("USERNAME", "your_username")
 COUNTRY_CODE = os.getenv("COUNTRY_CODE", "XX")
+
+PATH_DATA = "data"
 
 if not SPOTIFY_CLIENT_ID or not SPOTIFY_CLIENT_SECRET:
     raise ValueError(
@@ -300,8 +303,8 @@ def convert_with_spotify_api(
 
 # ========== USAGE ==========
 convert_with_spotify_api(
-    data_folder="data",
-    unknowns_file="unknown_songs.txt",
+    data_folder=PATH_DATA,
+    unknowns_file=UNKNOWN_FILE,
     username=USERNAME,
     country_code=COUNTRY_CODE,
 )
