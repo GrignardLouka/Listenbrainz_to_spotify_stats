@@ -10,6 +10,9 @@ On subsequent runs, it will use the cached spotify data, which is stored in the 
 a .env files is required to run this program, with the following variables:
 - `SPOTIFY_CLIENT_ID`: Your Spotify client ID
 - `SPOTIFY_CLIENT_SECRET`: Your Spotify client secret
+- `USERNAME`: Your chosen username
+- `COUNTRY_CODE`: Country code for the user, e.g. 'US', 'GB', etc.
+
 
 Your listenbrainz data should be stored in the data folder.
 Any .json file in the data folder will be processed.
